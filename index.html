@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="JQuary.js"></script>
+    <title>Video Downloader</title>
+</head>
+<body>
+
+    <div class="navigation">
+        <a href="#">Video_Downloader.com</a>
+    </div>
+    <div class="content">
+        <div id="input">
+            <input type="text" id="text" placeholder="Paste Link Here...">  
+            <button id="find_video">Find</button>
+            <button id="reset">reset</button>
+        </div>
+
+        <div class="result" >
+
+            <h1 id="result_w">Result</h1>
+            <div id="thumbnail">
+                 
+            </div>
+
+
+            <div id="title">
+                <p id="main_title">Title</p>
+            </div>
+
+
+            <div class="downloadbox">
+
+
+                <div id="file">
+                    <h3>File</h3>
+                    <p id="hd"></p>
+                    <p id="mp4"></p>
+                    <p id="mp3"></p>
+                </div>
+                <div id="size">
+                    <h3>Size</h3>
+                    <p id="hd_si"></p>
+                    <p id="mp4_si"></p>
+                    <p id="mp3_si"></p>
+                </div>
+                <div id="download">
+                    <h3>Download</h3>
+                    <button id="hd_link" ><a href="#">Download</a></button>
+                    <button id="mp4_link"><a href="#">Download</a></button>
+                    <button id="mp3_link"><a href="#">Download</a></button>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script>
+    $(".result").hide()
+
+    $("#find_video").click(function() {
+        setTimeout(() => {
+            $(".result").fadeIn()
+        }, 5000);
+        
+    })
+    $("#reset").click(function () {
+        $(".result").fadeOut()
+    })
+
+</script>
+</html>

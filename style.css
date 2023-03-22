@@ -1,0 +1,125 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    border: 2px solid black;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.navigation a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 2px solid black;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#input{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 70vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#text{
+    width: 80%;
+    align-self: center;
+    height: 30px;
+    margin: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#find_video{
+    width: 100px;
+    height: 30px;
+    align-self: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#reset{
+    width: 100px;
+    height: 30px;
+    align-self: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.result{
+    width: 70vw;
+    height: 60vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result{
+    display:none;
+}
+
+#thumbnail{
+    width: 80%;
+    height: 35%;
+    border: 2px solid black;
+}
+.thumbnail{
+    width: 100%;
+    height: 100%;
+}
+#title{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.downloadbox{
+    width: 80%;
+    height: 40vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#file{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+#size{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+#download{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
