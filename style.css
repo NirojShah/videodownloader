@@ -226,6 +226,7 @@ and (min-width:350px) {
 
     body{
         background-color: black;
+        height:100vh;
     }
     #input{
         width: 90vw;
@@ -272,6 +273,12 @@ and (min-width:350px) {
     }
     #download button a{
         font-size: 3vw;
+    }
+    #size p{
+        color: white;
+    }
+    #file p{
+        color: white;
     }
     
 
