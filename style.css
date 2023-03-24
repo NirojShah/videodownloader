@@ -3,22 +3,35 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Sans';
+    
+}
+
+body{
+    background-image: url("https://images.pexels.com/photos/2049422/pexels-photo-2049422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .navigation{
     width: 90%;
     height: 30px;
     display: flex;
-    border: 2px solid black;
     margin: auto;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .navigation a{
     font-size: 25px;
     text-decoration: none;
-    color: black;
+    text-shadow: 2px 2px 10px red;
+    font-family: 'Josefin Sans';
+}
+#down{
+    color: rgb(255, 16, 16);
 }
 
 .content{
@@ -27,7 +40,6 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    border: 2px solid black;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -35,74 +47,124 @@
 #input{
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border-radius: 10px;
     width: 70vw;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.35);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.781);
 }
 
 #text{
-    width: 80%;
+    width: 60%;
     align-self: center;
-    height: 30px;
+    height: 45px;
     margin: 10px;
     padding-left: 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: none;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.781);
+    font-size: medium;
+    color: black;
 }
 
 #find_video{
-    width: 100px;
-    height: 30px;
+    width: 8vw;
+    height: 3vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 255, 149, 0.452);
     align-self: center;
     margin-bottom: 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 0px solid black;
+    font-size: 22px;
+    border-radius: 10px 0px 10px 0px;
+    font-weight: 800;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.781);
+}
+
+#find_video:hover{
+    background-color: rgba(0, 255, 149, 0.747);
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(25, 250, 17, 0.664);
+    color: rgb(255, 255, 255);
+}
+#find_video:active{
+    background-color: rgba(0, 255, 149, 0.555);
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(3, 5, 3, 0.575);
+}
+#reset:hover{
+    background-color: rgba(0, 255, 149, 0.747);
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(25, 250, 17, 0.664);
+    color: rgba(255, 0, 0, 0.829);
+}
+#reset:active{
+    background-color: rgba(0, 255, 149, 0.555);
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(7, 12, 7, 0.575);
 }
 
 #reset{
-    width: 100px;
-    height: 30px;
+    width: 8vw;
+    height: 3vw;
+    color: rgba(255, 0, 0, 0.904);
+    background-color: rgba(0, 255, 149, 0.452);
     align-self: center;
     margin-bottom: 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 0px solid black;
+    font-size: 22px;
+    border-radius: 10px 0px 10px 0px;
+    font-weight: 800;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.781);
 }
 
 .result{
     width: 70vw;
-    height: 60vw;
-    border: 2px solid black;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
+    font-family: 'Josefin Sans';
 }
+#result_w{
+    color: rgb(6, 70, 22);
+    font-family:cursive;
+    font-style: italic;
+    text-decoration: underline rgb(0, 0, 0);
 
-#result{
-    display:none;
 }
 
 #thumbnail{
-    width: 80%;
-    height: 35%;
-    border: 2px solid black;
+    width: 24vw;
+    height: 12vw;
 }
+
 .thumbnail{
     width: 100%;
     height: 100%;
+    box-shadow: 0 0 30px white;
 }
 #title{
-    margin-top: 10px;
+    padding: 20px;
     font-size: 20px;
 }
 
 .downloadbox{
-    width: 80%;
-    height: 40vw;
-    border: 2px solid black;
+    width: 60vw;
+    height: 21vw;
     display: flex;
-    flex-direction: row;
+    border-radius: 10px;
     justify-content: space-around;
+    box-shadow: 7px 5px 15px rgba(0, 0, 0, 0.781);
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.downloadbox h3{
+    text-decoration: 2px underline;
 }
 
 #file{
@@ -122,4 +184,95 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
+}
+
+#download button{
+    background-color: rgba(88, 88, 240, 0.596);
+    width: 8vw;
+    height: 2.5vw;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.781);
+    
+}
+
+#download button:hover{
+    background-color: rgba(34, 34, 216, 0.671);
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.664);
+}
+
+#download button:active{
+    background-color: rgba(34, 34, 216, 0.671);
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.664);
+}
+
+#download button a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#download button a:active{
+    color: rgba(190, 182, 182, 0.815);
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+
+@media only screen 
+and (max-width:459px)
+and (min-width:350px) {
+
+    body{
+        background-color: black;
+    }
+    #input{
+        width: 90vw;
+        height: 30vw;
+        margin-bottom: 0px;
+    }
+    #text{
+        width: 50vw;
+        height: 8vw;
+        font-size: 16px;
+    }
+    #find_video{
+        width: 15vw;
+        height: 5vw;
+        font-size: 3.6vw;
+        padding-top: 3px;
+    }
+    #reset{
+        width: 15vw;
+        height: 5vw;
+        font-size: 3.6vw;
+        padding-top: 3px;
+    }
+    .result{
+        margin-top: 10px;
+    }
+    #result_w{
+        font-size: 5vw;
+    }
+    #thumbnail{
+        width: 35vw;
+        height: 20vw;
+    }
+
+    .downloadbox{
+        width: 90vw;
+        height: auto;
+        font-size: 3.5vw;
+    }
+    #download button{
+        width: 20vw;
+        height: 6vw;
+        margin-bottom: 10px;
+    }
+    #download button a{
+        font-size: 3vw;
+    }
+    
+
 }
