@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <script src="JQuary.js"></script>
     <title>Video Downloader</title>
 </head>
 <body>
 
     <div class="navigation">
-        <a href="#">Video_Downloader.com</a>
+        <a href="#">Video_<span id="down">Downloader</span>.com</a>
     </div>
     <div class="content">
         <div id="input">
@@ -25,7 +28,7 @@
 
             <h1 id="result_w">Result</h1>
             <div id="thumbnail">
-                 
+
             </div>
 
 
@@ -72,12 +75,13 @@
 
     $("#find_video").click(function() {
         setTimeout(() => {
-            $(".result").fadeIn()
+            $(".result").fadeIn("slow")
         }, 5000);
         
     })
     $("#reset").click(function () {
-        $(".result").fadeOut()
+        $(".result").fadeOut("slow")
+        $("#text").val("")
     })
 
 </script>
