@@ -79,6 +79,4 @@ document.getElementById("find_video").addEventListener("click", function() {
     })
 
 
-    // https://www.youtube.com/watch?v=32RAq6JzY-w
-
 
